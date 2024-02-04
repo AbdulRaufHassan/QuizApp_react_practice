@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('../assets/fonts/JosefinSans.ttf');
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../assets/fonts/Poppins.ttf');
+}
+
+.answersContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.answersContainer>div {
+    margin: 0px 30px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 30px 0px;
+    box-sizing: border-box;
+}
+
+.answersContainer>div>h1 {
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #087ea4;
+    font-size: 40px;
+    margin: 0px 0px 20px 0px;
+}
+
+.answersContainer>div>p {
+    font-family: 'JosefinSans', sans-serif;
+    color: #f6f7f9;
+    font-size: 24px;
+}
+
+.answersContainer>div>ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.answersContainer>div>ul>li {
+    list-style-type: none;
+    min-height: 50px;
+    max-height: fit-content;
+    background-color: #38444d;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    color: #f6f7f9;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.answersContainer>div>ul>.correctAnswer {
+    background-color: rgba(246, 247, 249, 0.9);
+    color: #087ea4;
+}
+
+.answersContainer>div>ul>.correctAnswer>.CheckIcon {
+    color: green !important;
+    font-size: 30px !important;
+    display: inline-block !important;
+    padding: 10px 10px 0px 0px !important;
+}
+
+.answersContainer>div>ul>li>.bagde {
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.answersContainer>div>ul>li>.bagde>span {
+    background-color: gray;
+    color: whitesmoke;
+    padding: 10px 10px;
+    font-family: 'JosefinSans';
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.answersContainer>div>ul>.incorrectAnswer>.incorrectIcon {
+    color: red !important;
+    font-size: 30px !important;
+    display: inline-block !important;
+    padding: 13px 10px 0px 0px !important;
+}
+
+.paddingAdd {
+    padding-left: 85px;
+}
+
+.backBtn {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 70px;
+    font-weight: 900;
+    color: #087ea4;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.score_Per {
+    padding: 50px 0px 0px 30px;
+    color: gainsboro;
+    font-family: 'JosefinSans';
+}
+
+.answersContainer>div>ul>li>p {
+    flex: 1;
+}
+
+@media only screen and (max-width: 1060px) {
+    .answersContainer>div>ul>li {
+        width: 100%;
+        padding: 0px 20px;
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+
+    .answersContainer>div {
+        margin: 0px 10px;
+    }
+
+    .score_Per {
+        padding: 50px 0px 0px 10px;
+    }
+
+    .paddingAdd {
+        padding-left: 75px;
+    }
+
+    .backBtn {
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .quizEndPageHeadr>div:nth-of-type(1)>img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .quizEndPageHeadr>div:nth-of-type(1)>h1 {
+        font-size: 27px;
+    }
+
+    .backBtn {
+        font-size: 50px;
+    }
+
+    .paddingAdd {
+        padding-left: 55px;
+    }
+
+    .answersContainer>div>ul>li {
+        padding: 0px 10px;
+        font-size: 15px;
+    }
+
+    .score_Per {
+        padding: 30px 0px 0px 10px;
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    .answersContainer>div>ul>.incorrectAnswer>.incorrectIcon {
+        font-size: 25px !important;
+        padding: 10px 10px 0px 0px !important;
+    }
+
+    .answersContainer>div>ul>.correctAnswer>.CheckIcon {
+        font-size: 25px !important;
+    }
+
+    .answersContainer>div>ul>li>.bagde>span {
+        font-size: 15px;
+    }
+
+    .answersContainer>div>p {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .answersContainer>div>ul>li>p{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .score_Per {
+        padding: 30px 0px 0px 10px;
+        font-size: 13px;
+        font-weight: 100;
+    }
+}
